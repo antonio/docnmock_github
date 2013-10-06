@@ -1,10 +1,11 @@
 require 'bundler/setup'
-require 'pry'
 require 'docnmock'
 
-module DocnmockGithub; end
+module DocnmockGithub
 
-Docnmock.api 'http://api.github.com' do
+end
+
+Docnmock.api 'https://api.github.com' do
 
   resource_group 'Users' do
 
